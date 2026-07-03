@@ -1,5 +1,6 @@
 import os
 import requests
+import time
 from datetime import datetime
 from openai import OpenAI
 from twilio.rest import Client
@@ -101,4 +102,4 @@ def run():
 if __name__ == "__main__":
     while True:
         run()
-        import time.sleep(86400)  # פעם ביום
+        time.sleep(86400)  # פעם ביום
