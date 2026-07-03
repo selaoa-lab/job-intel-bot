@@ -78,7 +78,7 @@ def send_whatsapp(message):
     twilio.messages.create(
         from_=TWILIO_WHATSAPP_FROM,
         body=message,
-        to="whatsapp:+14155238886"
+        to="whatsapp:+972507836060"
     )
 
 def run():
