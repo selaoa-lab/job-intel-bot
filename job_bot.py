@@ -13,6 +13,7 @@ TWILIO_WHATSAPP_FROM = "whatsapp:+14155238886"  # sandbox
 YOUR_WHATSAPP = os.getenv("YOUR_WHATSAPP")
 
 client = OpenAI(api_key=OPENAI_API_KEY)
+print("Fetching jobs...")
 twilio = Client(TWILIO_SID, TWILIO_TOKEN)
 
 CV = """
@@ -98,4 +99,6 @@ def run():
     send_whatsapp(msg)
 
 if __name__ == "__main__":
-    run()
+    while True:
+        run()
+        time.sleep(86400)  # פעם ביום
