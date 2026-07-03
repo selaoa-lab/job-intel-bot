@@ -87,7 +87,7 @@ def run():
     relevant = []
     for job in jobs:
         if is_relevant(job):
-            job["score"] = score(job)
+            job["score"] = 80
             relevant.append(job)
 
     relevant = sorted(relevant, key=lambda x: x["score"], reverse=True)[:5]
